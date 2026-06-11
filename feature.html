@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/feature.css" />
+</head>
+<body>
+    <div class="nav">
+       <a href="#" id="nav1" data-id="1">Graphics</a>
+       <a href="#"id="nav2" data-id="2">Systeam</a>
+        <a href="#" id="nav3" data-id="3">Story</a>
+        <a href="#" id="nav4" data-id="4">Animation</a>
+
+    </div>
+   
+<div class="box1 active" >
+    <div class="text">
+        <div class="top1">FEATURE#1</div>
+        <div class="title1">Graphics</div>
+        <div class="title-right">对应现行最新游戏机类型的4K60fps硬件功能<br><br>角色2d插画、3d模型、场景设计、UI等全部翻新得更加美丽</div>
+    </div>
+    <div class="pic">
+        <div class="p-left"><img src="img/feature/feature1_ss1_a3aa2098aa61cc5713be2e13f357d3f8.webp" alt=""></div>
+        <div class="p-right"><img src="img/feature/feature1_ss2_1528d2dceeafb471e961a9ac8cd0b6c8.webp" alt=""></div>
+    </div>
+</div>
+
+<div class="box1" id="box2">
+    <div class="text">
+        <div class="top1">FEATURE#2</div>
+        <div class="title1">Systeam</div>
+        <div class="title-right">提升了游戏的操作性，包括使用者在内，游戏整体变得对玩家更加友善等，在许多细节上进行了易于游玩的调整</div>
+    </div>
+    <div class="pic">
+        <div class="p-left"><img src="img/feature/feature2_ss1_b331067ecccb15dd88f1397af612ac3b.webp" alt=""></div>
+        <div class="p-right"><img src="img/feature/feature2_ss2_b671e49409555dfc854cf2f2d58f5392.webp" alt=""></div>
+    </div>
+</div>
+
+<div class="box1" id="box3">
+    <div class="text">
+        <div class="top1">FEATURE#3</div>
+        <div class="title1">Story</div>
+        <div class="title-right">追加角色支线故事，追加搭话时的台词、追加场景语音</div>
+    </div>
+    <div class="pic">
+        <div class="p-left"><img src="img/feature/feature3_ss1_f569f2efb9ce6a0d922ae85fec751f05.webp" alt=""></div>
+        <div class="p-right"><img src="img/feature/feature3_ss2_d2a601eb2a19b546baa2ab2742f5ed07.webp" alt=""></div>
+    </div>
+</div>
+<div class="box1" id="box4">
+    <div class="text">
+        <div class="top1">FEATURE#4</div>
+        <div class="title1">Animation</div>
+        <div class="title-right">包含片头语音在内，作品的内容全部重新制作，使名场面的演出更加生动</div>
+    </div>
+    <div class="pic">
+        <div class="p-left"><img src="img/feature/feature4_ss1_e282c5c5b4ddb5ad5929beda3a508380.webp" alt=""></div>
+        <div class="p-right"><img src="img/feature/feature4_ss2_c6fe351f815ae1a560d7c8d973c3577f.webp" alt=""></div>
+    </div>
+</div>
+
+<script>
+    const nav = document.querySelector('.nav')
+    
+    nav.addEventListener('click',function(e){
+        if(e.target.tagName === 'A'){
+           
+           const i = +e.target.dataset.id
+           document.querySelector('.active').classList.remove('active')
+           document.querySelector(`.box1:nth-child(${i+1})`).classList.add('active')
+        }
+    })
+</script>
+
+</body>
+</html>

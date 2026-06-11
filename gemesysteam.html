@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gamesysteam.css">
+</head>
+<body>
+    
+    <div class="top">
+        <div id="sys">Game Systeam</div>
+        <div id="sys-ch">遊戲系統</div>
+    </div>
+    <div id="bgcolor"><img src="img/waves/wave-5.svg" alt=""></div>
+    <div id="bgcolor-big">
+        <div list1>
+            <div id="title1">Battle</div>
+            <div id="title1-ch">戰鬥系統</div>
+            <div id="fulltext1">攻擊敵人弱點讓敵人倒地，就會發生可以繼續攻擊的1MORE。當場上所有敵人都倒地時，即可發動總攻擊。<br><br><br>
+                也採用了《女神異聞錄５》中獲得好評的直接指令與助攻功能，在1MORE時可將行動機會交付給夥伴的換手，在本作品中則是以全新的輪轉之姿登場！<br><br><br>
+                特別技能「降神」作為本作品的全新戰略，使用後將釋放出有別於通常攻擊的強力技能。</div>
+            <div class="sliderbox">
+                <img id="slider" src="img/gamesysteam/battle_01_0eb62ebe418da7ad1a17b5ff8aa18e58.webp" alt="">
+            </div>
+                
+        </div>
+        <div list2>
+            <div id="title2">Daily Life</div>
+            <div id="title2-ch">日常生活</div>
+            <div id="fulltext2">在日常生活中，主人公的「學力」、「魅力」「勇氣」這三種「人格指數」將會受到考驗。透過用功讀書或打工來提升這些指數，就能使用原本無法利用的設施，或是變得能夠與他人建立社群。<br><br><br>
+
+                在宿舍生活中與夥伴們一同度過時光可獲得「特性」，這是在戰鬥中非常有用的被動技能。</div>
+            <div class="sliderbox2">
+                <img id="slider2" src="img/gamesysteam/dailylife_01_928f62e1a5fef80e2d5e70d48de24d6d.webp" alt="">
+            </div>
+                
+        </div>
+    </div>
+</body>
+
+
+<script>  
+            //第一个轮播图
+            const sliderData = [
+                {URL:'./img/gamesysteam/battle_01_0eb62ebe418da7ad1a17b5ff8aa18e58.webp'},
+                {URL:'./img/gamesysteam/battle_02_dd2d71a36fb6988d1cb6dbe9493d5ee1.webp'},
+                {URL:'./img/gamesysteam/battle_03_1361a092df7241ac130f87ddba8215d3.webp'},
+                {URL:'./img/gamesysteam/battle_04_1ef68eee816b2debbf066c4df120724c.webp'},
+                {URL:'./img/gamesysteam/battle_05_c3eef8be2c8261a0abfb3d058805262d.webp'},
+                {URL:'./img/gamesysteam/battle_06_59f963760d669b6162157b9450c68d15.webp'},
+                {URL:'./img/gamesysteam/battle_07_7c99db5369d52cfe7938ba5a1073e1f1.webp'},
+               
+            ]
+            const img1 = document.querySelector('.sliderbox img')
+            let i = 0
+            setInterval(function(){
+             i ++
+             if(i>=7){
+             i = 0
+             }
+             img1.src = sliderData[i].URL
+             
+            },3000)
+
+            //第二个轮播图
+            const sliderData2 = [
+                {URL:'./img/gamesysteam/dailylife_01_928f62e1a5fef80e2d5e70d48de24d6d.webp'},
+                {URL:'./img/gamesysteam/dailylife_02_b64e102b738dff702f3f559145a9a62c.webp'},
+                {URL:'./img/gamesysteam/dailylife_03_f9deb295af8697cebb611e5d3b2b9843.webp'},
+                {URL:'./img/gamesysteam/dailylife_04_f02da5e01c955061039646ae9151130a.webp'},            
+            ]
+            const img2 = document.querySelector('.sliderbox2 img')
+            let j = 0
+            setInterval(function(){
+             j ++
+             if(j>=4){
+             j = 0
+             }
+             img2.src = sliderData2[j].URL
+             
+            },3300)
+            
+</script>
+</html>

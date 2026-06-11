@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+}
+#ttu img{
+    width: 100%;
+    height: 80%;
+}
+#logo{
+    position:absolute;
+    top: 4%;
+    left: 2%;
+}
+#logo2{
+    position:absolute;
+    top: 75%;
+    left: 72%;
+}
+#box1 {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    top: 100%;
+    background-color: rgb(235, 211, 229);
+    overflow: hidden; /* 防止视频溢出容器 */
+}
+
+#box1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 让视频等比例缩放填充整个容器，可能会裁剪部分画面 */
+    opacity: 0; /* 初始时隐藏视频 */
+    transition: opacity 0.5s ease-in-out;
+}
+#new1{
+    position: absolute;
+    top: 5%;
+    left: 33%;
+
+}
+#new2{
+    position: absolute;
+    top: 11%;
+    left: 50%;
+
+}
+#new3{
+    position: absolute;
+    top: 14%;
+    left: 38%;
+    font-size: 20px;
+
+}
+#new3-{
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    font-size: 20px;
+
+}
+#box2{
+    
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    background-color: rgb(255,229,229);
+    top: 125%;
+}
+#non{
+    position: absolute;
+    width: 100%;
+    height: 145%;
+    background-color: rgb(255,229,229);
+    top: 425%;
+}
+#box2-2{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    background-color: rgb(104, 201, 237);
+    top: 25%;
+    left: 48%;
+    color: rgb(63,29,29);
+}
+#box2-3{
+    position: absolute;
+    width: 40%;
+    height: 5%;
+   
+    top: 25%;
+    left: 7%;
+    font-size: 100px;
+    color: rgb(63,29,29);
+}
+#box2-4{
+    position: absolute;
+    width: 40%;
+    height:10%;
+   
+    top: 30%;
+    left: 7%;
+}
+#box2-5{
+    position: absolute;
+    width: 40%;
+    height:10%;
+    top: 50%;
+    left: 0%;
+}
+#box2-5 img{
+    position: absolute;
+    width: 140%;
+    height:180%;
+    
+}
+#box2-6{
+    position: absolute;
+    width: 40%;
+    height:5%;
+    
+    top: 50%;
+    left: 58%;
+    font-size: 100px;
+    color: rgb(63,29,29);
+}
+#box2-7{
+    position: absolute;
+    width: 40%;
+    height:10%;
+    
+    top: 55%;
+    left: 58%;
+    color: rgb(63,29,29);
+}
+#char{
+    position: absolute;
+    width: 40%;
+    height:5%;
+    top:77%;
+    left: 35%;
+    font-size: 100px;
+    color: rgb(63,29,29);
+}
+#tu-char img{
+    position: absolute;
+   
+    width: 25%;
+    height:23%;
+    top:85%;
+    left: 55%;
+    font-size: 100px;
+}
+#uname{
+    position: absolute;
+   
+    width: 7%;
+    height:2%;
+    top:86.5%;
+    left: 26%;
+    font-size: 30px;
+    color: rgb(63,29,29);
+}
+#cv{
+    position: absolute;
+   
+    width: 2%;
+    height:1%;
+    top:87%;
+    left: 32%;
+    font-size: 17px;
+    color: rgb(63,29,29);
+}
+#ucvname{
+    position: absolute;
+   
+    width: 7%;
+    height:1%;
+    top:87%;
+    left: 34%;
+    font-size: 17px;
+    color: rgb(63,29,29);
+}
+#message{
+    position: absolute;
+    
+    width: 25%;
+    height:7%;
+    top:89%;
+    left: 26%;
+    font-size: 15px;
+    color: rgb(63,29,29);
+    
+}
+#imgzuos img{
+    position: absolute;
+    width: 12%;
+    top:97%;
+    left: 26%;
+}
+#imgzuox img{
+    position: absolute;
+    width: 12%;
+    top:102%;
+    left: 26%;
+}
+#imgyous img{
+    position: absolute;
+    width: 12%;
+    top:97%;
+    left: 39%;
+}
+#imgyoux img{
+    position: absolute;
+    width: 12%;
+    top:102%;
+    left: 39%;
+}
+#tu-char2 img{
+    position: absolute;
+   
+    width: 25%;
+    height:23%;
+    top:115%;
+    left: 24%;
+    font-size: 100px;
+}
+#imgzuos2 img{
+    position: absolute;
+    width: 12%;
+    top:127%;
+    left: 56%;
+}
+#imgzuox2 img{
+    position: absolute;
+    width: 12%;
+    top:132%;
+    left: 56%;
+}
+#imgyous2 img{
+    position: absolute;
+    width: 12%;
+    top:127%;
+    left: 69%;
+}
+#imgyoux2 img{
+    position: absolute;
+    width: 12%;
+    top:132%;
+    left: 69%;
+}
+#uname2{
+    position: absolute;
+   
+    width: 7%;
+    height:2%;
+    top:117%;
+    left: 56%;
+    font-size: 30px;
+    color: rgb(63,29,29);
+}
+#cv2{
+    position: absolute;
+   
+    width: 2%;
+    height:1%;
+    top:117.5%;
+    left: 62%;
+    font-size: 17px;
+    color: rgb(63,29,29);
+}
+#ucvname2{
+    position: absolute;
+   
+    width: 7%;
+    height:1%;
+    top:117.5%;
+    left: 64%;
+    font-size: 17px;
+    color: rgb(63,29,29);
+}
+#message2{
+    position: absolute;
+    
+    width: 25%;
+    height:7%;
+    top:120%;
+    left: 56%;
+    font-size: 15px;
+    color: rgb(63,29,29);
+    
+}
+#box3{
+    position: absolute;
+    background-color: rgb(255,240,240);
+    width: 100%;
+    height: 70%;
+    top: 570%;
+}
+#tit{
+    
+    position: relative;
+    top: 10%;
+    left: 35%;
+    font-size: 110px;
+    color: rgb(63,29,29);
+}
+#pic-buy{
+    position: relative;
+    top: 20%;
+    left: 27%;
+}
+#xbox{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+#ps{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+#windows{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+#steam{
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+#box4{
+    position: absolute;
+    background-color: rgb(229,238,246);
+    width: 100%;
+    height: 20%;
+    top: 640%;
+}
+#warning{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+   margin-top: 50px;
+    left: 25%;
+}
+#official{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+   margin-top: 75px;
+    left: 50%;
+}
+#box5{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40%;
+    top: 660%;
+}
+#logogamepass{
+    position: absolute;
+    top: 50%;
+    
+    left: 3%;
+}
+#logoxbox{
+    position: absolute;
+    top: 50%;
+    
+    left: 15%;
+}
+#logoxboxnoe{
+    position: absolute;
+    top: 50%;
+    
+    left: 27%;
+   
+}
+#logowindows{
+    position: absolute;
+    top: 50%;
+    
+    left: 35%;
+   
+}
+#logops{
+    position: absolute;
+    top: 50%;
+    
+    left: 43%;
+    
+}
+#logosteam{
+    position: absolute;
+    top: 50%;
+    
+    left: 55%;
+   
+}
+#atlus{
+    position: absolute;
+    top: 48%;
+    
+   
+    left:85%;
+}
+#pst{
+    position: absolute;
+    top: 43%;
+    left: 80%;
+}
+#lasswarning{
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 65%;
+    left: 15%;
+    color: rgb(0, 0, 0); 
+    font-size: 10px;
+    opacity: 0.5;
+}
+#banquan{
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    top: 80%;
+    left: 40%;
+    color: rgb(63,29,29);
+    font-size: 15px;
+   
+}
+.flag {
+    opacity: 0; 
+    transition: all 1.2s;
+    transform: translateY(40%);
+  }
+  
+  .active {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/box.css" />
+		<style>
+			body,
+			html {
+				padding: 0;
+				margin: 0;
+				font-family: Arial, sans-serif;
+				display: block;
+			}
+
+			.startwaves {
+				position: fixed;
+				display: flex;
+				justify-content: center;
+				height: 120vh;
+				width: 100%;
+				background-color: #469ce5;
+				transform: translateY(-10vh);
+				animation-name: down;
+				animation-duration: 3s;
+				animation-delay: 1s;
+				animation-timing-function: ease-out;
+				z-index: 999;
+			}
+
+			@keyframes down {
+				0% {
+					transform: translateY(-10vh);
+				}
+
+				100% {
+					transform: translateY(110vh);
+				}
+
+			}
+
+			.waves {
+				display: block;
+				position: absolute;
+				bottom: 120vh;
+				width: 100%;
+			}
+
+			#videobg {
+				width: 100%;
+				height: 100%;
+			}
+
+			.videos {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				position: absolute;
+			}
+
+			#centertext {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				animation-name: out;
+				animation-duration: 1.5s;
+				animation-delay: 3s;
+				animation-fill-mode: forwards; 
+			}
+
+			@keyframes out {
+				100% {
+					opacity: 0;
+					display: none;
+				}
+			}
+			@keyframes in {
+				100% {
+					opacity: 1;
+				}
+			}
+			#p3relogo{
+				position: absolute;
+				right: 12%;
+				top: 50%;
+				opacity: 0;
+				transform: translateY(-50%);
+				animation-name: in;
+				animation-duration: 1.5s;
+				animation-delay: 5s;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards; 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="startwaves" id="downout">
+			<div class="waves">
+				<img src="img/waves/wave-1.svg" />
+				<img src="img/waves/wave-2.svg" />
+				<img src="img/waves/wave-3.svg" />
+				<img src="img/waves/wave-4.svg" />
+				<img src="img/waves/wave-5.svg" id="shape" />
+			</div>
+		</div>
+
+
+		<div id="videobg">
+			<video id="video2" class="videos" muted="muted" loop>
+				<source src="assset/fv_movie2.mp4">
+			</video>
+
+			<video id="video1" class="videos" muted="muted">
+				<source src="assset/fv_movie1.mp4">
+			</video>
+
+			<div id="centertext">
+				<h1>Memento Mori</h1>
+				<p>Remember, You Will Die.<br />Time never waits.<br />It delivers all equally to the same end.</p>
+			</div>
+
+			<img id="p3relogo" src="img/P3RE.svg" alt="" /> 
+		</div>
+		<div id="box1" >
+			<video src="img/pv/1394741010-1-192.mp4"autoplay muted playsinline loop ></video>
+			
+		</div>
+		<div id="box2">
+			<div id="box2-2"class="flag"><img src="img/box1/onep.jpeg" alt=""></div>
+			<div id="box2-3"class="flag">Introduction</div>
+			<div id="box2-4"class="flag">主角少年在转学至港区港湾人工岛的月光馆学园高中部后，因遭到怪物袭击而觉醒了名为“人格面具”的心灵之力。
+                <br><br>
+				随后他加入了特别课外活动部（S.E.E.S.），
+				与同伴们一起讨伐出现在“影时间”中的神秘怪物“暗影”。
+				<br><br><br>
+				在前方等待他们的命运究竟会是……
+				
+				</div>
+            <div id="featureimg"class="flag"><img src="img/box1/more_btn_3c1cdb2b6c1eec246de0be513796da97.webp" alt=""></div>
+			<div id="box2-5"class="flag"><img src="img/box1/twop.jpeg" alt=""></div>
+			<div id="box2-6"class="flag">Features</div>
+			<div id="box2-7"class="flag">通过改善游戏操作性，细致调整包括交互界面在内的游戏整体系统， <br>让游戏变得更易上手。
+                 <br><br><br>
+				当年的“那份感动”将更加生动地在现行硬件平台上重生归来！
+				
+				</div>
+			<div id="gamesysteamimg"class="flag"><img src="img/box1/game_system_btn_a3a720f287d7225ecc42d95d7fe96fd7.webp" alt=""></div>
+			<div id="box2-8"class="flag"><img src="img/box1/threep.jpeg" alt=""></div>
+			<div id="box2-9"class="flag">Game Systeam</div>
+			<div id="box2-10"class="flag">保留原作精髓，提升游戏体验，让《女神异闻录３》更加易于上手。<br><br><br>
+
+				更为爽快的战斗系统、全面升级的画质表现及关卡机关使塔尔塔罗斯的探索体验得以 <br>提升。宿舍生活和社群系统也全面进化！</div>
+		</div>
+
+		    <div id="seebox"class="flag"></div>
+			<div id="SEES" class="flag">S.E.E.S</div>
+			<div id="SEES-text"class="flag">An aggregation vigilantly chosen to <br><br>
+
+				vanquish the Shadows, will face Destiny.<br><br>
+				
+				Time won't wait for you, Destiny won't change for you.</div>
+        
+			<div class="characterbox" >
+				<ul class="flag">
+				<li><img src="img/character/character1_badbd990dcbabe1f25c22de113f772a0.webp" alt=""></li>
+				<li><img src="img/character/character2_35a3dc87ea1a02e2e3d6397d46e1cbf9.webp" alt=""></li>
+				<li><img src="img/character/character3_cd155bb1faff87558813a0054f0f9436.webp" alt=""></li>
+				<li><img src="img/character/character4_b11ad41cb7a01fef1d40aeb65d002471.webp" alt=""></li>
+			    </ul >
+			    <ul class="flag">
+				<li><img src="img/character/character5_fa07d2d06f3925eea4af9a91937506ba.webp" alt=""></li>
+				<li><img src="img/character/character6_0e3115e9f6076da20973ac40ef045866.webp" alt=""></li>
+				<li><img src="img/character/character7_532c5a12d64704763e5cac354fb3874c.webp" alt=""></li>
+				<li><img src="img/character/character8_790cb89b62931cfe93f16d61c746464d.webp" alt=""></li>
+			    </ul>	
+			</div>
+			
+			<div class="bottom">
+				<div id="box5">
+					<div id="logogamepass"class="flag"><img src="img/box1/game_pass_logo_a2c3e7460d06173dc9b25bce8f81383d.png" alt=""></div>
+					<div id="logoxbox"class="flag"><img src="img/box1/xbox_xs_logo_716872195e3289c9541e980c543ef82a.webp" alt=""></div>
+					<div id="logoxboxnoe"class="flag"><img src="img/box1/xbox_one_logo_81ff2c384596af3177ba3018ccfa7b48.webp" alt=""></div>
+					<div id="logowindows"class="flag"><img src="img/box1/windows_logo_2149d9c4adabcad6a7f8534d96ba1a6d.webp" alt=""></div>
+					<div id="logops"class="flag"><img src="img/box1/ps5_ps4_logo_edcdc8392c0fd9286e1187e973d21b89.webp" alt=""></div>
+					<div id="logosteam"class="flag"><img src="img/box1/steam_logo_f359fba372b69c152feb76e4e2203d7a.webp" alt=""></div>
+					<div id="atlus"class="flag"><img src="img/box1/atlus_logo_853c96f1dd3f1de2b369be4f9dd38b47.webp" alt=""></div>
+					<div id="pst"class="flag"><img src="img/box1/p_studio_logo_309f72dd4c41c3616cc1eb2b576c2561.webp" alt=""></div>
+					<div id="lasswarning"class="flag">Microsoft Xbox Series X, Xbox Series S, Xbox One and related Xbox logos are trademarks and/or registered trademarks of Microsoft Corporation and the Microsoft group of companies.
+						“”、“PlayStation”、“”and“”are trademarks and/or registered trademarks of Sony Interactive Entertainment Inc.
+						©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</div>
+					<div id = banquan class="flag">版權©ATLUS ©SEGA All rights reserved.</div>
+				</div>
+			</div>
+		<script>
+			// 效果1
+			var downwave = document.getElementById('downout');
+			
+			// 添加动画结束事件监听器
+			downwave.addEventListener('animationend', function() {
+				// 在动画结束后执行操作
+				downwave.style.display = 'none'
+				var video1 = document.getElementById("video1");
+				var video2 = document.getElementById("video2");
+				video1.play();
+				video1.addEventListener('ended', function() {
+					//
+					video1.style.display = 'none'
+					video2.play();
+				});
+			});
+			// 效果2鼠标悬停播放视频
+                 const video = document.querySelector('#box1 video')
+				 // 监听鼠标移入事件
+                 document.querySelector('#box1').addEventListener('mouseenter', function() {
+                   video.style.opacity = '1';
+            });
+
+            // 监听鼠标移出事件
+                 document.querySelector('#box1').addEventListener('mouseleave', function() {
+                 video.style.opacity = '0';
+            });	
+
+			// 效果3人物卡
+			window.onload = function() {
+      var images = document.querySelectorAll('.characterbox img');
+      var characterBox = document.querySelector('.characterbox');
+      var colors = ['rgb(134,237,252)', 'rgb(252,147,255)', 'rgb(152,159,251)', 'rgb(211,218,218)',
+	             'rgb(246,140,168)', 'rgb(149,245,220)', 'rgb(242,244,242)', 'rgb(250,246,166)'];
+      
+      for (let i = 0; i < images.length; i++) {
+        // 为每张图片添加鼠标悬停事件
+        images[i].onmouseover = function() {
+          // 当鼠标悬停时设置 characterbox 的背景颜色
+          characterBox.style.backgroundColor = colors[i];
+          // 放大当前悬停的图片
+          this.style.transform = 'scale(1.1)';
+        };
+        // 为每张图片添加鼠标移出事件
+        images[i].onmouseout = function() {
+          // 当鼠标移出时清除 characterbox 的背景颜色
+          characterBox.style.backgroundColor = '';
+          // 恢复图片的原始大小
+          this.style.transform = 'scale(1)';
+        };
+      }
+    };//效果4滚动
+	const observer = new IntersectionObserver(function(entries) {
+          for (var i = 0; i < entries.length; i++) {
+              var entry = entries[i];
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("active");
+              }
+          }
+      });
+  
+      var hiddenElements = document.querySelectorAll(".flag");
+      for (var j = 0; j < hiddenElements.length; j++) {
+          observer.observe(hiddenElements[j]);
+      }
+		</script>
+	</body>
+</html>

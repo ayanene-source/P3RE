@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box1 {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 100%;
+    background-color: rgb(212, 236, 243);
+    overflow: hidden; /* 防止视频溢出容器 */
+}
+
+#box1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 让视频等比例缩放填充整个容器，可能会裁剪部分画面 */
+    opacity: 0; /* 初始时隐藏视频 */
+    transition: opacity 0.5s ease-in-out;
+}
+
+#box2{
+    
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    background-color: rgb(212, 236, 243);
+    top: 125%;
+}
+#box2-2{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+   
+    top: 5%;
+    left: 40%;
+}
+#box2-3{
+    position: absolute;
+    width: 35%;
+    height: 5%;
+    
+    top: 5%;
+    left: 3%;
+    font-size: 100px;
+    color: #1d384a;
+}
+#box2-4{
+    position: absolute;
+    width: 35%;
+    height:10%;
+    top: 10%;
+    left: 3%;
+    letter-spacing: 2px;
+    color: #1d384a;
+    font-weight: 500;
+}
+#box2-5{
+    position: absolute;
+    width: 40%;
+    height:10%;
+    top: 30%;
+    left: 0%;
+}
+#featureimg{
+    position: absolute;
+   
+    top: 41.5%;
+    left: 60%;
+}
+#box2-6{
+    position: absolute;
+    width: 40%;
+    height:5%;
+    font-size: 100px;
+    color: #1d384a;
+    top: 30%;
+    left: 60%;
+    
+}
+#box2-7{
+    position: absolute;
+    width: 40%;
+    height:10%;
+    top: 35%;
+    left: 60%;
+    color: #1d384a;
+    font-weight: 500;
+    letter-spacing: 2px;
+  
+}
+#gamesysteamimg{
+    position: absolute;
+  
+    top: 66%;
+    left: 10%;
+}
+#box2-8{
+    position: absolute;
+    width: 40%;
+    height:5%;
+    
+    top: 55%;
+    left: 40%;
+}
+#box2-9{
+    position: absolute;
+    width: 40%;
+    height:5%;
+    font-size: 80px;
+    color: #1d384a;
+    top: 55%;
+    left: 3%;
+}
+#box2-10{
+    position: absolute;
+    width: 40%;
+    height:10%;
+    color: #1d384a;
+    font-weight: 500;
+    letter-spacing: 2px;
+    top: 60%;
+    left: 3%;
+}
+
+#SEES{
+      font-size: 220px;
+      color: #1d384a;
+      position: absolute;
+      left: 4%;
+      top: 370%;
+      left: 30%;
+      
+}
+#SEES-text{
+    font-size: 20px;
+    letter-spacing: 2px;  
+    position: absolute;
+    left: 37%;
+    top: 400%;
+    color: #1d384a;
+}
+.characterbox{
+    padding-top: 50px; /* 增加第一行 ul 元素与容器顶部的距离，可根据需要调整数值 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(212, 236, 243);
+    top: 425%;
+}
+.characterbox ul {
+    display: flex; /* 将 ul 元素设置为 Flex 布局 */
+    flex-wrap: wrap; /* 允许元素换行 */
+    justify-content: space-around; /* 元素在主轴上均匀分布，两端留有一定的空间 */
+    list-style: none; /* 去除列表的默认样式 */
+    padding: 0; /* 去除默认的内边距 */
+    margin: 0; /* 去除默认的外边距 */
+    margin-bottom: 40px; /* 增加两行 ul 元素之间的距离，可根据需要调整数值 */
+  }
+  
+  .characterbox li {
+    margin: 10px; /* 为每个 li 元素添加一些外边距，增加间距 */
+  }
+  .characterbox img {
+    transition: all 0.3s ease;
+    width: 300px; /* 设置图片宽度 */
+    height: auto; /* 高度自动调整，保持宽高比 */
+   
+  }
+  .highlight {
+    border: 2px solid red; /* 用于显示悬停效果的类，可根据需要修改样式 */
+  }
+  .characterbox {
+    transition: background-color 0.8s ease; /* 为 characterbox 添加过渡效果，使颜色变化更平滑 */
+  }
+  #box5{
+    position: absolute;
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    height: 40%;
+    top: 530%;
+}
+#logogamepass{
+    position: absolute;
+    top: 50%;
+    
+    left: 3%;
+}
+#logoxbox{
+    position: absolute;
+    top: 50%;
+    
+    left: 15%;
+}
+#logoxboxnoe{
+    position: absolute;
+    top: 50%;
+    
+    left: 27%;
+   
+}
+#logowindows{
+    position: absolute;
+    top: 50%;
+    
+    left: 35%;
+   
+}
+#logops{
+    position: absolute;
+    top: 50%;
+    
+    left: 43%;
+    
+}
+#logosteam{
+    position: absolute;
+    top: 50%;
+    
+    left: 55%;
+   
+}
+#atlus{
+    position: absolute;
+    top: 48%;
+    
+   
+    left:85%;
+}
+#pst{
+    position: absolute;
+    top: 43%;
+    left: 80%;
+}
+#lasswarning{
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 65%;
+    left: 15%;
+    color: rgb(0, 0, 0); 
+    font-size: 10px;
+    opacity: 0.5;
+}
+#banquan{
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    top: 80%;
+    left: 40%;
+    color: rgb(63,29,29);
+    font-size: 15px;
+   
+}
+.flag {
+    opacity: 0; 
+    transition: all 1.2s;
+    transform: translateY(40%);
+  }
+  
+  .active {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
