@@ -14,5 +14,8 @@ desktop.ini
 *.rar
 *.7z
 
+# 视频文件
+*.mp4
+
 # Node modules (如果有)
 node_modules/
